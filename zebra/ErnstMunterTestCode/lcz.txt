@@ -1,0 +1,52 @@
+46 5
+English ISA person
+redHouse ISA house
+Spaniard ISA person
+dog ISA animal
+Japanese ISA person
+painter ISA profession
+Italian ISA person
+tea ISA drink
+Norwegian ISA person
+greenHouse ISA house
+coffee ISA drink
+whiteHouse ISA house
+sculptor ISA profession
+snails ISA animal
+diplomat ISA profession
+yellowHouse ISA house
+milk ISA drink
+blueHouse ISA house
+violinist ISA profession
+fruitJuice ISA drink
+fox ISA animal
+doctor ISA profession
+horse ISA animal
+zebra ISA animal
+water ISA drink
+
+person lives_in house
+person owns animal
+person drinks drink
+person breeds animal
+person is profession
+
+English lives_in redHouse
+Spaniard owns dog
+Japanese is painter
+Italian drinks tea
+Norwegian IS_LOCATED AT_LEFT
+greenHouse drinks coffee
+greenHouse IMMED_RIGHT_OF whiteHouse
+sculptor breeds snails
+diplomat lives_in yellowHouse
+milk IS_LOCATED IN_MIDDLE
+Norwegian NEXT_TO blueHouse
+violinist drinks fruitJuice
+fox NEXT_TO doctor
+horse NEXT_TO  diplomat
+SOLVE person owns zebra
+ANSWER person house profession animal drink
+
+
+

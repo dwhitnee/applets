@@ -1,0 +1,21 @@
+17 3
+American ISA person
+Canadian ISA person
+Australian ISA person
+redDoor ISA house
+greenDoor ISA house
+blueDoor ISA house
+dog ISA pet
+cat ISA pet
+zebra ISA pet
+person lives_in house
+person owns pet
+American lives_in redDoor
+blueDoor owns dog
+cat IS_LOCATED IN_MIDDLE
+greenDoor IMMED_RIGHT_OF blueDoor
+SOLVE person owns zebra
+ANSWER person house pet
+
+
+
