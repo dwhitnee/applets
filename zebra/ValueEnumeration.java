@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------
-// ValueEnumeration                                 ï¿½ 1997 David Whitney
+// ValueEnumeration                                 © 1997 David Whitney
 //
 // Enumerates the values a variables has.
 //
@@ -19,6 +19,7 @@ import Value;
 
 public class ValueEnumeration
 {
+    Vector          _values;
     Enumeration     _enum;
 
     public ValueEnumeration( Variable inVar )
