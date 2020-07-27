@@ -3,6 +3,7 @@ This is my solution to a MacTech Programmers Challenge from 1997. It's in applet
 See Zebra.html for more information.  The challenge email follows:
 
 
+<code>
 
 Date: Mon, 15 Sep 1997 06:48:20 -0400
 To: CHALLENGE-A <CHALLENGE-A@listmail.xplain.com>
@@ -149,3 +150,6 @@ Now, back to the beach to find that zebra ….
 -- Programmer's Challenge        -- Bob Boonstra
    progchallenge@mactech.com        boonstra@ultranet.com
    <http://www.mactech.com/>        <http://www.ultranet.com/~boonstra>
+
+
+</code>
