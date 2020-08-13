@@ -1,0 +1,29 @@
+------
+Mac IE 4.0 JVM (1.1) does not do BorderLayout adds correctly.
+
+The 1.1. way fails silently:
+  container.add( _canvas, "Center" );
+
+but the deprecated 1.0 way still works
+  container.add("Center", _canvas );
+
+
+------
+Netscape 4.x NT
+Cannot convert "1.0" from String to double.
+Double.valueOf( "1.0" );       // fails
+
+------
+Netscape Irix, Windos 9x
+This code may or may not result in time having passed:
+
+    long time = System.currentTimeMillis();
+
+    try {
+      Thread.sleep( 20 );
+    } catch (InterruptedException ex) {
+        System.out.println("Sleep was interrupted!");
+   }
+
+    if (time == System.currentTimeMillis()) {
+       System.m.out.println("Time did not pass in sleep!");

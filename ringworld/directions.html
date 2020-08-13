@@ -1,0 +1,152 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="David Whitney, May 5, 1999">
+   <meta name="GENERATOR" content="Mozilla/4.51 (Macintosh; I; PPC) [Netscape]">
+   <title>  RingWorld Applet
+</title>
+<!-- <body bgcolor= #808080> -->
+</head>
+<body>
+
+<!--
+<applet code="RingWorldApplet.class" 
+	archive="RingWorld.jar"
+	width=570 height=450><param name="Radius" value="300">
+	<param name="Gravity" value="1">
+	<param name="MultiThread" value="false">
+	<param name="OwnWindow" value="false">
+</applet>
+-->
+
+<ul>
+<li>
+Add new objects by double-clicking.</li>
+
+<li>
+Move objects by clicking and dragging.</li>
+
+<li>
+Change object velocity by Shift-clicking and dragging.</li>
+
+<li>
+Click <a href="standalone.html" target="_top">here</a> to bring up the
+applet in its own window.</li>
+</ul>
+<a href="#About">About...</a>
+<br><a href="#Use">How To Use</a>
+<br><a href="#Experiments">Things To Try</a>
+<br><a href="#Bugs">Bugs</a>
+<br><a href="#Source">Source Code</a>
+<br>&nbsp;
+<h3>
+<a NAME="About"></a>About RingWorld</h3>
+This is a simulation of a rotating space settlement without gravity. The
+only forces influencing the objects in it are the rotation of the ring.
+The black squares are buildings up to six storys tall (20m on each side.)
+The balls are weather ballons(?) They're artificially large so they can
+be grabbed.
+<blockquote>r = radius of the RingWorld (meters)
+<br>g = apparent gravity at the surface of the ring
+<br>v = velocity of ring at the surface (meters/second)
+<br>t = period of rotation (seconds)
+<br>&nbsp;</blockquote>
+
+<h3>
+<a NAME="Use"></a>How to Use</h3>
+
+<ul>
+<li>
+Press <b>Jump</b> to have the balls fall off of their platforms.</li>
+
+<li>
+With <b>Lock Viewpoint</b> you can view the simulation from afar, watching
+the ring rotate freely. Or you can attach (lock) yourself to the ring so
+the rotation appears to stop.</li>
+
+<li>
+Buttons with letters in brackets <b>[p]</b> have keyboard short cuts. For
+example,you can pause the simulation by typing 'p' (or spacebar, too).
+If it does not appear to work, click inside the ring and try again.</li>
+
+<li>
+To add balls to the simulation, double-click anywhere inside the ring,
+or press the <b>Random</b> button to have a ball placed randomly. New balls
+will appear with a line under them. This is a stationary platform that
+rotates with the ring.</li>
+
+<li>
+<b>Show Velocity Vectors</b> will draw arrows indicating the direction
+the balls would travel if left alone.&nbsp; Shift-Click and drag a ball
+to change its velocity.&nbsp; Press the Shift key and hold the mouse button
+down over a ball and it will turn red.&nbsp; Move the mouse in the direction
+you want the ball to travel, and a line will appear indicating the velocity
+vector you are adding to the ball's current velocity.</li>
+
+<li>
+Click on<b> Edit World</b> to see the dimensions of the world. Change the
+radius and the apparent gravity and see what happens.</li>
+
+<li>
+If there's just too much stuff in the world, you can always start over
+with <b>Reset</b>.</li>
+
+<li>
+Speed and <b>zoom</b>ing are controled with the four buttons on the top
+right. The speed multiplier is shown in the upper left. For example, '2x'
+means that time is passing twice as fast as in real time.</li>
+
+<li>
+Turn on <b>Real Time</b> to see how fast this world would really operate.&nbsp;
+A best attempt is made at having things move at the rate they would in
+the real world.&nbsp; As such, you cannot speed up, slow down, or pause
+the world.&nbsp; You can still pause the display, but the world will continue
+and when you un-pause, the world will jump forward to where it would be
+if you had not paused it in the first place.</li>
+</ul>
+
+<h3>
+<a NAME="Experiments"></a>Things to Try</h3>
+
+<ul>
+<li>
+Turn on Velocity Vectors and drag a ball around.&nbsp; Notice how its velocity
+changes.</li>
+
+<li>
+Turn on Trails and unlock the viewpoint.&nbsp; Notice how the trail curves,
+but the ball continues in a straight line.</li>
+
+<li>
+Lock the viewpoint and zoom in to grab a ball.&nbsp; Shift click to toss
+the ball in the air.&nbsp; See if you can get the ball to land in the same
+place it started.&nbsp; Pausing the simulation can help in setting the
+velocity vector of the ball (or multiple balls at once).</li>
+</ul>
+
+<h3>
+</h3>
+
+<h3>
+<a NAME="Bugs"></a>Bugs and Enhancements</h3>
+This applet requires Java 1.1, and most 4.x browsers do only a fair job
+of running applets.&nbsp; Therefore this applet will probably behave differently
+on different systems.&nbsp; I've made my best attempt at getting this to
+run on various systems, but there will always be some differences.&nbsp;
+If you have problems, find bugs, or have suggestions, please send email
+to <a href="mailto:dwhitney@cs.stanford.edu">dwhitney@cs.stanford.edu</a>.
+<br>Please include what machine, browser, and version of Java you are running
+on.
+<h3>
+<a NAME="Source"></a>Source code</h3>
+You are welcome to use the Java source code in any non-commercial manner
+you see fit.&nbsp; Hopefully it is well written and documented enough so
+that you can learn something from it.&nbsp; Source code (JDK 1.1) is <a href="src/">here</a>.
+<p>This software is supplied AS-IS.&nbsp; No warranty is given or implied.
+<p>
+<hr>Web work by <a href="http://www.nas.nasa.gov/~dwhitney">David Whitney</a>,
+concept by <a href="http://www.nas.nasa.gov/~globus">Al Globus</a>.
+<br><i>Last update:</i> May 24, 1999.
+</body>
+</html>

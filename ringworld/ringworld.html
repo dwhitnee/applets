@@ -1,0 +1,189 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="David Whitney, May 5, 1999">
+   <meta name="GENERATOR" content="Mozilla/4.51 (Macintosh; I; PPC) [Netscape]">
+   <title>  RingWorld Physics Simulation
+</title>
+</head>
+
+<body bgcolor = white>
+
+<!-- This looks best as 570x450 on Macs and PCs, 650x450 on Unix -->
+
+<!--
+	archive="RingWorld.jar"
+	codebase=classes
+	width=570 height=450>
+-->
+
+<applet code="RingWorldApplet.class" 
+	archive=RingWorld.jar
+	width=600 height=450>
+<param name="Radius" value="250">
+<param name="Gravity" value="1">
+<param name="MultiThread" value="false">
+<param name="RealTime" value="true">
+<param name="OwnWindow" value="false">
+
+<b>
+If you had a Java-enabled (4.x or better) browser you'd see a rotating 
+space settlement here.
+</b>
+</applet>
+
+<a href=http://science.nas.nasa.gov/Services/Education/SpaceSettlement/70sArt/AC75-1086q.jpeg>
+<img align=right width=240 height=190
+ src = http://science.nas.nasa.gov/Services/Education/SpaceSettlement/70sArt/AC75-1086q.jpeg>
+</a>
+<!--
+ src = http://science.nas.nasa.gov/Services/Education/SpaceSettlement/70sArt/AC75-1086-1q.jpeg>
+ -->
+
+&nbsp;<br>
+<ul>
+<li>Add new objects by double-clicking (slowly).</li>
+<li>Move objects by clicking and dragging.</li>
+<li>Throw objects (change the velocity) by Shift-clicking and dragging.</li>
+</ul>
+<br>
+
+
+<!--
+<center><h3>
+<a href=#stayhere
+   onClick='window.open("standalone.html");'>
+Click to Start Simulation</a>
+</h3></center>
+-->
+ 
+<a href="#About">About...</a>
+<br><a href="#Use">How To Use</a>
+<br><a href="#Experiments">Things To Try</a>
+<br><a href="#Bugs">Bugs</a>
+<br><a href="#Source">Source Code</a>
+<br><a href="index.html#java">The Applet's not running!</a>
+
+
+<h3>
+<a NAME="About"></a>About RingWorld</h3>
+This is a simulation of a rotating space settlement without gravity. The
+only forces influencing the objects in it are the rotation of the ring.
+The black squares are buildings up to six storys tall (20m on each side.)
+The balls are artificially large (the size of hot-air balloons) so they can be grabbed.
+Objects in free fall travel in a straight line, even if it does not appear that way.
+Press "Jump" and see for yourself.
+
+<blockquote>r = radius of the RingWorld (meters)
+<br>g = apparent gravity at the surface of the ring
+<br>v = velocity of ring at the surface (meters/second)
+<br>t = period of rotation (seconds)</blockquote>
+
+<h3>
+<a NAME="Use"></a>How to Use</h3>
+
+<ul>
+<li>
+Press <b>Jump</b> to have the balls fall off of their platforms.</li>
+
+<li>
+With <b>Lock Viewpoint</b> you can view the simulation from afar, watching
+the ring rotate freely. Or you can attach (lock) yourself to the ring so
+the rotation appears to stop.</li>
+
+<li>
+Buttons with letters in brackets <b>[p]</b> have keyboard short cuts. For
+example, you can pause the simulation by typing 'p' (or spacebar, too).
+If it does not appear to work, click inside the ring and try again.</li>
+
+<li>
+To add balls to the simulation, double-click anywhere inside the ring,
+or press the <b>Random</b> button to have a ball placed randomly. New balls
+will appear with a line under them. This is a stationary platform that
+rotates with the ring.</li>
+
+<li>
+<b>Show Velocity Vectors</b> will draw arrows indicating the direction
+the balls would travel if left alone. Shift-Click and drag a ball
+to change its velocity. Press the Shift key and hold the mouse button down
+over a ball and it will turn red. Move the mouse in the direction
+you want the ball to travel, and a line will appear indicating the velocity
+vector you are adding to the ball's current velocity.</li>
+
+<li>
+Click on<b> Edit World</b> to see the dimensions of the world. Change the
+radius and the apparent gravity and see what happens.</li>
+
+<li>
+If there's just too much stuff in the world, you can always start over
+with <b>Reset</b>.</li>
+
+<li>
+Speed and <b>zoom</b>ing are controled with the four buttons on the top
+right. The speed multiplier is shown in the upper left. For example, '2x'
+means that time is passing twice as fast as in real time.</li>
+
+<li>
+Turn on <b>Constant Speed</b> to keep the simulation speed steady even if the 
+animation frame rate starts slowing down. Adding too many objects and trails to the
+animation will slow your machine down, but this mode will compensate and keep
+the world rotating at a constant rate.  
+<br>
+Why not always use this mode? 
+This mode uses constant feedback to maintain the simulation speed.
+So if the computer hiccups, you will see the simulation jerk forward to catch up.
+This correcting feedback can result in jerky animation if the browser does not 
+give the applet consistent time to run.  I don't trust browsers so it is left up
+to you turn the mode on if necessary.  Experiment and see what works best.
+
+</li>
+</ul>
+
+<h3>
+<a NAME="Experiments"></a>Things to Try</h3>
+
+<ul>
+<li>
+Turn on Trails and Velocity Vectors, and unlock the viewpoint. 
+Notice how the trail curves, but the ball continues in a straight line.
+Turn off the trails to prove that the balls are indeed moving in a straight line.</li>
+
+<li>
+Lock the viewpoint and zoom in to grab a ball. Shift click a ball and drag
+it towards the middle to toss the ball in the air. See if you can get the
+ball to land in the same place it started. Pausing the simulation can help
+in setting the velocity vector of the ball (or multiple balls at once).</li>
+
+<li>
+Turn on Velocity Vectors and drag a ball around. Notice how its velocity
+changes depending on the distance from the center.  
+<a href=Q1.html>Why does it change?</a></li>
+
+<li>
+Even though each ball is travelling at a constant velocity, why do the dots in
+its trail spread out as if it were accelerating as it approaches the ground?
+[<a href= Q4.html>answer</a>]</ul>
+
+<h3>
+<a NAME="Bugs"></a>Bugs and Enhancements</h3>
+This applet requires Java 1.1, and most 4.x browsers do only a fair job
+of running applets. Therefore this applet will probably behave differently
+on different systems. I've made my best attempt at getting this to
+run on various systems, but there will always be some differences. If you
+have problems, find bugs, or have suggestions, please send email to 
+<a href="mailto:dwhitney@cs.stanford.edu">dwhitney@cs.stanford.edu</a>.
+<br>Please include what machine, browser, and version of Java you are running
+on, and include the Java console log if you can (under the Communicator:Tools menu).
+<h3>
+<a NAME="Source"></a>Source code</h3>
+You are welcome to use the Java source code in any non-commercial manner
+you see fit. Hopefully it is well written and documented enough so
+that you can learn something from it. Source code (JDK 1.1) is <a href="src/">here</a>.
+<p>This software is supplied AS-IS. No warranty is given or implied.
+<p>
+<hr>Web work by <a href="http://www.nas.nasa.gov/~dwhitney">David Whitney</a>,
+concept by <a href="http://www.nas.nasa.gov/~globus">Al Globus</a>.
+<br><i>Last update:</i> June 15, 1999.
+</body>
+</html>

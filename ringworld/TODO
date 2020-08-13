@@ -1,0 +1,61 @@
+Make RingWorldGraphics, ringworld, and physics a bean
+
+Make game.
+
+When balls penetrate ring, should move back out along last velocity vector
+Add "edit radius and gravity" to main screen.
+
+Why is InterruptedException thrown in sleep?
+
+Make balls rebound
+  
+		** DONE **
+
+Launch balls with mouse DONE! 5/12/99 4:45am
+Test background clearing.
+Figure out thread security thing (went away magically?)
+Make the whole thing a frame with menubar
+Make frame the right size (panel.preferredSize?)
+alt slider needs to watch ringworld for data change.
+# balls need to be repositioned on new ringworld
+When zoomed (or always) add new balls at bottom
+Close window on applet.stop()
+Edit ringworld parameters in window
+
+Why canvas doesnt get size set without a println?  Mystery.
+
+How to have buttons watch data (Viewers as well as Controllers)
+Observe....
+
+Release all balls when radius changes. (or raise them)
+Alt or double click to grab/move object?
+Fix throttle (faster - slower)  should be able to infinitly accelerate.
+
+try and set to 1x speed to start with.
+Draw buildings.
+Draw trail of dropped ball?
+put radius and gravity and ? on screen.
+
+Put help text in web page.
+Vary buildings
+Set real time to be constant time (and add a rate multiplier)
+Optimize drawing routine.  (no new Vector2D objs)  DID THIS HELP?
+Dismiss' button on world info.
+Smooth out animation in real time mode.
+
+Make pause really pause, even in real-time.
+Cute thing that says "Applet loading"
+Get 8 nice colors from Joel.
+Separate RingWorldApplet.class from rest of jar
+
+Why Win98 messes up in real time, div by 0?
+System time not advanced after sleep?  No on Win98!!!!
+
+
+
+
+_Game ideas_
+
+Farthest distance travelled with least impulse
+Land on the building
+Score = 4*height + closeness score.
